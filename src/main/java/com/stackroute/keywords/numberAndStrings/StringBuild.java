@@ -7,7 +7,7 @@ public class StringBuild {
         // create a StringBuilder object
         // with a String pass as parameter
         StringBuilder str
-                = new StringBuilder("AAAABBBCCCC");
+                = new StringBuilder("Atul");
 
         // print string
         System.out.println("String = "
