@@ -1,7 +1,7 @@
 package com.stackroute.keywords.files;
-
 import java.io.FileInputStream;
-public class FileHandeling {
+
+public class FileHandelingIO {
     public static void main(String args[]){
         try{
             FileInputStream fin=new FileInputStream("/home/cgi/Desktop/test.txt");
