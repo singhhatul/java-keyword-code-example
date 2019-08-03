@@ -15,7 +15,7 @@ class LambdaExpression
         // by default implements abstractFun()
         FuncInterface fobj = ()->System.out.println("this is lambda expression");
 
-        // This calls above lambda expression and prints 10.
+        // This calls above lambda expression and prints message.
         fobj.abstractFun();
     }
 }
