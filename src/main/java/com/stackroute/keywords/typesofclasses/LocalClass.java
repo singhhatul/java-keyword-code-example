@@ -1,47 +1,19 @@
 package com.stackroute.keywords.typesofclasses;
-// Java program to illustrate
-// working of local inner classes
-public class LocalClass
-{
-    private void getValue()
-    {
-        int sum = 20;
 
-        // Local inner Class inside method
-        class Inner
-        {
-            public int divisor;
-            public int remainder;
+//A class i.e. created inside a method is called local inner class in java.
+// If you want to invoke the methods of local inner class, you must instantiate this class inside the method.
 
-            public Inner()
-            {
-                divisor = 4;
-                remainder = sum%divisor;
-            }
-            private int getDivisor()
-            {
-                return divisor;
-            }
-            private int getRemainder()
-            {
-                return sum%divisor;
-            }
-            private int getQuotient()
-            {
-                System.out.println("Inside inner class");
-                return sum / divisor;
-            }
+public class LocalClass{
+    private String message="hello stackroute";//instance variable
+    void display(){
+        class Local{
+            void msg(){System.out.println(message);}
         }
-
-        Inner inner = new Inner();
-        System.out.println("Divisor = "+ inner.getDivisor());
-        System.out.println("Remainder = " + inner.getRemainder());
-        System.out.println("Quotient = " + inner.getQuotient());
+        Local l=new Local();
+        l.msg();
     }
-
-    public static void main(String[] args)
-    {
-    LocalClass localClass=new LocalClass();
-    localClass.getValue();
+    public static void main(String args[]){
+        LocalClass obj=new LocalClass();
+        obj.display();
     }
 }
