@@ -7,6 +7,8 @@ interface Eatable{
 }
 class AnnonymousClass{
     public static void main(String args[]){
+        //A class is created but its name is decided by the compiler which
+        // implements the Eatable interface and provides the implementation of the eat() method.
         Eatable e=new Eatable(){
             //overridden method
             public void eat(){System.out.println("nice fruits");}
