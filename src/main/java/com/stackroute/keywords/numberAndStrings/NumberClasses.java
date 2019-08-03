@@ -1,4 +1,4 @@
-package com.stackroute.keywords.numberclass;
+package com.stackroute.keywords.numberAndStrings;
 
 public class NumberClasses {
     public static void main(String[] args) {
